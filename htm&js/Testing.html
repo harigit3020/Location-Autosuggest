@@ -17,7 +17,6 @@
 </head>
 
 <body>
-    <!-- <div id='printoutPanel'></div> -->
     <div id='searchBoxContainer'><input type='text' id='searchBox' /></div>
 
     <div id='myMap' style='width: 100vw; height: 100vh;'></div>
@@ -26,20 +25,10 @@
         function loadMapScenario() {
             Microsoft.Maps.loadModule('Microsoft.Maps.AutoSuggest', {
                 callback: () => {
-                    // var options = { maxResults: 5 };
                     var manager = new Microsoft.Maps.AutosuggestManager();
                     manager.attachAutosuggest('#searchBox', '#searchBoxContainer');
                 }
             });
-            // function onLoad() {
-
-            // }
-            // function selectedSuggestion(suggestionResult) {
-            //     document.getElementById('printoutPanel').innerHTML =
-            //         'Suggestion: ' + suggestionResult.formattedSuggestion +
-            //             '<br> Lat: ' + suggestionResult.location.latitude +
-            //             '<br> Lon: ' + suggestionResult.location.longitude;
-            // }
 
         }
     </script>
