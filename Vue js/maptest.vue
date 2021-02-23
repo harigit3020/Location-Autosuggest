@@ -22,7 +22,7 @@ export default {
     return {
       script: [
         {
-          src: `https://www.bing.com/api/maps/mapcontrol?key=AmGYYu23Abpqd4GtkPhEPqUZq65EBzDmrMgUYBx_tdW3oKH4CH2TvZRcjRqbTMOV`,
+          src: `https://www.bing.com/api/maps/mapcontrol?key=[bing_map apikey]`,
           async: true,
           defer: true,
           callback: () => this.loadMapScenario(), // will declare it in methods
