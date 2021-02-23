@@ -3,7 +3,6 @@
     <v-text-field
       id="searchBox"
       v-model="startlocation"
-      :error-messages="errors"
       label="Start Location"
       prepend-inner-icon="mdi-map-marker"
       outlined
@@ -16,7 +15,7 @@
 <script>
 export default {
   data: () => {
-    return {};
+    return {startlocation:""};
   },
   metaInfo() {
     return {
